@@ -2,6 +2,12 @@
 # We use "3" because it's the last version at this time.
 version: "3"
 
+# dict in python (basically like an object)
+# dict = {"key": "value", "myDict": {
+# "sub-key": "some value",
+# }}
+
+
 # You should know that docker-composes works with services.
 # 1 service = 1 container.
 # For example, a service maybe, a server, a client, a database...
@@ -38,7 +44,7 @@ services:
       - 1234:1234
 
   # Second service (container): the client.
-  # We use the keyword 'client' for the server.
+  # We use the keyword 'client' for the client.
   client:
     # Here 'client/ corresponds to the path to the client folder
     # that contains the Dockerfile to use.
